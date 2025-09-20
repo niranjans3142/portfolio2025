@@ -1,0 +1,153 @@
+
+  .card-wrapper-cyber {
+    position: relative;
+    display: inline-block;
+  }
+  
+  
+  
+  
+  .card-cyber{
+    cursor: pointer;
+    position: relative;
+    overflow: visible;
+    height:350px;
+    width:300px;
+    z-index:40;
+    display:flex;
+    border-bottom: 2px solid pink; 
+    justify-content:center;
+    background:
+    linear-gradient(transparent 0 10%, transparent 10%),
+    repeating-linear-gradient(
+     to bottom,
+     rgba(255, 255, 255, 0.07) 0px,
+     rgba(255, 255, 255, 0.07) 1px,
+     transparent 1px,
+     transparent 4px
+    );
+    
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      6% 100%,
+      0 93%,
+      0 68%,
+      0 65%,
+      5% 60%,
+      5% 31%,
+      0 24%
+    );
+  }
+  
+  .card-wrapper-cyber::before {
+    content: "";
+    position: absolute;
+    z-index: -20;
+    top :0px;
+    left: -5px;
+    right: 0px;
+    bottom: 0px;
+    height:100%;
+    width:100%;
+    border: 1px solid pink;
+    clip-path: polygon(
+    0 24%,
+    5% 31%,
+    5% 60%,
+    0 65%,
+    0 68%,
+    0 93%,
+    6% 100%,
+    0 100%,
+    0 0
+  );
+    background: linear-gradient(
+    to bottom,
+    #933dff 0%,       /* deeper purple */
+    #a066ff 10%,      /* lilac transition */
+    #d68adf 20%,      /* magenta-pink */
+    #fcb0ff 35%,      /* cyber pink */
+    #e0e0e0 50%,      /* dirty white */
+    #fcb0ff 65%,      /* cyber pink again */
+    #d68adf 80%,      /* magenta-pink */
+    #a066ff 90%,      /* lilac fade */
+    #933dff 100%      /* back to deep purple */
+  )
+  }
+  
+  .cyber{
+    margin:auto;
+    cursor:pointer;
+    text-align: end;
+    color: #fff;
+    text-shadow:
+      0 0 5px rgba(255, 192, 255, 0.4),
+      0 0 8px rgba(170, 100, 255, 0.3);
+    margin-left: 15px;
+    letter-spacing: .1em;
+  }
+
+  .niranjan-logo-image{
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+  
+  .card-cyber::after {
+    content: "";
+    position: absolute;
+    z-index:10;
+    top: -6px;
+    left:0px;
+    width: 40px;
+    height: 105%;
+    background: linear-gradient(
+    to bottom,
+    #933dff 0%,       /* deeper purple */
+    #a066ff 10%,      /* lilac transition */
+    #d68adf 20%,      /* magenta-pink */
+    #fcb0ff 35%,      /* cyber pink */
+    #e0e0e0 50%,      /* dirty white */
+    #fcb0ff 65%,      /* cyber pink again */
+    #d68adf 80%,      /* magenta-pink */
+    #a066ff 90%,      /* lilac fade */
+    #933dff 100%      /* back to deep purple */
+  );
+    filter: drop-shadow(-1px 0px 200px #933dff)
+            drop-shadow(-3px 0px 30px purple);
+  }
+  
+  .card-top-shape {
+    position: absolute;
+    top:0px;
+    left: -1px;
+    width: 400px;
+    height: 130px;
+    background: linear-gradient(
+    to right,
+    #a066ff 10%,      /* lilac transition */
+    #d68adf 20%,      /* magenta-pink */
+    #fcb0ff 35%,      /* cyber pink */
+    #e0e0e0 50%,      /* dirty white */
+    #fcb0ff 65%,      /* cyber pink again */
+    #d68adf 80%,      /* magenta-pink */
+    #a066ff 90%,      /* lilac fade */
+    #933dff 100%      /* back to deep purple */
+  );
+    z-index: 100;     /* above card and everything */
+    clip-path: polygon(0 0, 23% 0, 28% 10%, 100% 10%, 100% 31%, 0 31%);
+    pointer-events: none; /* so it doesn't block mouse events */
+  }
+  
+  @media (max-width: 400px) {
+    .card-cyber{
+      width: 280px;
+    }
+    .card-top-shape {
+      width: 300px;
+    }
+}
+  
+  

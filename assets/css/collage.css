@@ -1,0 +1,86 @@
+/* Modal backdrop */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  /* Modal content */
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90vw;
+    min-height: 60vh;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: bounceInRight 0.7s ease-out;
+  }
+
+  /* Collage layout */
+  .collage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .collage img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 5px;
+  }
+
+  /* Close button */
+  .close-btn {
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    color: #555;
+  }
+
+  /* Bounce animation */
+  @keyframes bounceInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(-20px);
+    }
+    80% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .zoom-on-hover {
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+  }
+  
+  .zoom-on-hover:hover {
+    transform: scale(2);
+    cursor: zoom-out;
+  }
+  

@@ -1,0 +1,23 @@
+{
+  "name": "portfolio2025-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "minify:html": "html-minifier-terser index.html -o dist/index.html --collapse-whitespace --remove-comments --minify-css true --minify-js true",
+    "minify:css": "postcss assets/css/*.css -d dist/assets/css",
+    "minify:js": "terser index.js -o dist/index.js -c -m",
+    "copy:images": "copyfiles -u 1 assets/images/**/* dist/assets/images",
+    "build": "npm run minify:html && npm run minify:css && npm run minify:js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "cssnano": "^7.1.1",
+    "html-minifier-terser": "^7.2.0",
+    "postcss-cli": "^11.0.1",
+    "terser": "^5.44.0"
+  }
+}
