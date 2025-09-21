@@ -53,6 +53,12 @@
   align-items: center;
   margin: auto;
 }
+@media (max-width: 767px) {
+  .icon img {
+    width: 30px;
+    height: 30px;
+  }
+}
 
 .service-card h3 {
   margin: 0;

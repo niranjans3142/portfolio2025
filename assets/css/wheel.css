@@ -39,23 +39,58 @@ canvas#wheel {
   }
   
   .details-overlay {
-    position: absolute;
+    /* position: absolute;
     bottom: 10px;
-    left: 15px;
+    left: 15px; */
   }
   
   .details-overlay h3 {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.9);
     margin: 0;
-    font-weight: bold;
+    margin-bottom: 1.2rem;
+   color: #d0d0d0;
   }
   
-  .details-overlay p {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.9);
-    margin: 2px 0 0;
-    font-weight: 600;
+  .details-overlay h3, .details-overlay p{background: rgba(0, 0, 0, 0.9);padding:2px 4px;font-weight: bold;
+  }
+  .details-overlay p, .value {
+    font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+  margin: 1em auto;
+  max-width: 700px;
+  letter-spacing: 0.2px;
+  }
+
+  .pointer-mark{
+    font-weight: 900;
+    margin-right: 20px;
+    color: #e0e0e0;
+  }
+
+  @media (max-width: 600px) {
+    .details-overlay h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .details-overlay p, .value {
+      font-size: 1rem; /* Increased from 0.95rem for better mobile readability */
+      max-width: 100%;
+    }
+  
+    .details-overlay a {
+      font-size: 1rem; /* Increased from 0.95rem for consistency */
+    }
+  }
+  @media (max-width: 400px) {
+    .details-overlay h3 {
+      font-size: 1.15rem;
+    }
+    .details-overlay p, .value {
+      font-size: 0.95rem; /* Adjusted slightly for very small screens */
+    }
+    .details-overlay a {
+      font-size: 0.95rem;
+    }
   }
   
   .details-info {

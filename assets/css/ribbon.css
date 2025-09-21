@@ -1,5 +1,65 @@
-.ribbon {
+/* Animation Keyframes */
+@keyframes wave-domain {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(5px);
+  }
+}
 
+/* Base Styles for the Heading */
+.wave-domain-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.wave-domain-heading span {
+  margin: 0;
+  display: inline-block;
+}
+
+/* Apply Animation to the "wave-domain" Span's Children */
+.wave-domain span {
+  animation: wave-domain 2s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+  padding: 0 2px;
+}
+
+/* Assign delay variable to each letter */
+.wave-domain span:nth-child(1) { --i: 1; }
+.wave-domain span:nth-child(2) { --i: 2; }
+.wave-domain span:nth-child(3) { --i: 3; }
+.wave-domain span:nth-child(4) { --i: 4; }
+.wave-domain span:nth-child(5) { --i: 5; } /* The space */
+.wave-domain span:nth-child(6) { --i: 6; }
+.wave-domain span:nth-child(7) { --i: 7; }
+.wave-domain span:nth-child(8) { --i: 8; }
+.wave-domain span:nth-child(9) { --i: 9; }
+.wave-domain span:nth-child(10) { --i: 10; }
+.wave-domain span:nth-child(11) { --i: 11; }
+.wave-domain span:nth-child(12) { --i: 12; }
+.wave-domain span:nth-child(13) { --i: 13; }
+.wave-domain span:nth-child(14) { --i: 14; } /* The space */
+.wave-domain span:nth-child(15) { --i: 15; }
+.wave-domain span:nth-child(16) { --i: 16; }
+
+.ribbon {
   display: inline-block;
   width: 6rem;
   height: 4.5rem;
@@ -19,8 +79,16 @@
   margin: 30px auto;
   position: relative;
   transform: translate3d(0, 0, 0);
-}
 
+  animation: bounce 5s infinite ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.ribbon:hover {
+  /* Lift and add a glowing effect on hover */
+  transform: translateY(-8px);
+  animation: pulse-glow 1.5s infinite ease-in-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 255, 255, 0.5);
+}
 
 .ribbon:nth-child(2),
 .ribbon:nth-child(7) {
@@ -74,4 +142,31 @@
 
 .ribbon.ribbon-badge::after {
   border-top: 1.5rem solid #a0a0a0;
+  transition: all 0.3s ease-in-out;
+}
+
+.ribbon:hover.ribbon-badge::after {
+  border-top-color: #f0f0f0;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+/* Define the animation for the hover glow effect */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
 }

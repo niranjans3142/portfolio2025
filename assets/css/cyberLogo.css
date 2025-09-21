@@ -1,153 +1,171 @@
+/* Using CSS variables for better maintainability */
+:root {
+  --purple-dark: #933dff;
+  --purple-light: #a066ff;
+  --pink-magenta: #d68adf;
+  --pink-cyber: #fcb0ff;
+  --white-dirty: #e0e0e0;
+  --pink-border: pink;
+}
 
-  .card-wrapper-cyber {
-    position: relative;
-    display: inline-block;
-  }
-  
-  
-  
-  
-  .card-cyber{
-    cursor: pointer;
-    position: relative;
-    overflow: visible;
-    height:350px;
-    width:300px;
-    z-index:40;
-    display:flex;
-    border-bottom: 2px solid pink; 
-    justify-content:center;
-    background:
+.card-wrapper-cyber {
+  position: relative;
+  display: inline-block;
+  /* Simplify z-index scale */
+  z-index: 1;
+}
+
+.card-cyber {
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+  height: 350px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid var(--pink-border); 
+  z-index: 2; /* higher than wrapper */
+
+  background:
     linear-gradient(transparent 0 10%, transparent 10%),
     repeating-linear-gradient(
-     to bottom,
-     rgba(255, 255, 255, 0.07) 0px,
-     rgba(255, 255, 255, 0.07) 1px,
-     transparent 1px,
-     transparent 4px
+      to bottom,
+      rgba(255, 255, 255, 0.07) 0px,
+      rgba(255, 255, 255, 0.07) 1px,
+      transparent 1px,
+      transparent 4px
     );
     
-    clip-path: polygon(
-      0 0,
-      100% 0,
-      100% 100%,
-      6% 100%,
-      0 93%,
-      0 68%,
-      0 65%,
-      5% 60%,
-      5% 31%,
-      0 24%
-    );
-  }
-  
-  .card-wrapper-cyber::before {
-    content: "";
-    position: absolute;
-    z-index: -20;
-    top :0px;
-    left: -5px;
-    right: 0px;
-    bottom: 0px;
-    height:100%;
-    width:100%;
-    border: 1px solid pink;
-    clip-path: polygon(
-    0 24%,
-    5% 31%,
-    5% 60%,
-    0 65%,
-    0 68%,
-    0 93%,
-    6% 100%,
-    0 100%,
-    0 0
+  clip-path: polygon(
+    0 0, 100% 0, 100% 100%,
+    6% 100%, 0 93%, 0 68%, 0 65%,
+    5% 60%, 5% 31%, 0 24%
   );
-    background: linear-gradient(
-    to bottom,
-    #933dff 0%,       /* deeper purple */
-    #a066ff 10%,      /* lilac transition */
-    #d68adf 20%,      /* magenta-pink */
-    #fcb0ff 35%,      /* cyber pink */
-    #e0e0e0 50%,      /* dirty white */
-    #fcb0ff 65%,      /* cyber pink again */
-    #d68adf 80%,      /* magenta-pink */
-    #a066ff 90%,      /* lilac fade */
-    #933dff 100%      /* back to deep purple */
-  )
-  }
-  
-  .cyber{
-    margin:auto;
-    cursor:pointer;
-    text-align: end;
-    color: #fff;
-    text-shadow:
-      0 0 5px rgba(255, 192, 255, 0.4),
-      0 0 8px rgba(170, 100, 255, 0.3);
-    margin-left: 15px;
-    letter-spacing: .1em;
-  }
-
-  .niranjan-logo-image{
-    position: absolute;
-    top: 50px;
-    left: 0;
-  }
-  
-  .card-cyber::after {
-    content: "";
-    position: absolute;
-    z-index:10;
-    top: -6px;
-    left:0px;
-    width: 40px;
-    height: 105%;
-    background: linear-gradient(
-    to bottom,
-    #933dff 0%,       /* deeper purple */
-    #a066ff 10%,      /* lilac transition */
-    #d68adf 20%,      /* magenta-pink */
-    #fcb0ff 35%,      /* cyber pink */
-    #e0e0e0 50%,      /* dirty white */
-    #fcb0ff 65%,      /* cyber pink again */
-    #d68adf 80%,      /* magenta-pink */
-    #a066ff 90%,      /* lilac fade */
-    #933dff 100%      /* back to deep purple */
-  );
-    filter: drop-shadow(-1px 0px 200px #933dff)
-            drop-shadow(-3px 0px 30px purple);
-  }
-  
-  .card-top-shape {
-    position: absolute;
-    top:0px;
-    left: -1px;
-    width: 400px;
-    height: 130px;
-    background: linear-gradient(
-    to right,
-    #a066ff 10%,      /* lilac transition */
-    #d68adf 20%,      /* magenta-pink */
-    #fcb0ff 35%,      /* cyber pink */
-    #e0e0e0 50%,      /* dirty white */
-    #fcb0ff 65%,      /* cyber pink again */
-    #d68adf 80%,      /* magenta-pink */
-    #a066ff 90%,      /* lilac fade */
-    #933dff 100%      /* back to deep purple */
-  );
-    z-index: 100;     /* above card and everything */
-    clip-path: polygon(0 0, 23% 0, 28% 10%, 100% 10%, 100% 31%, 0 31%);
-    pointer-events: none; /* so it doesn't block mouse events */
-  }
-  
-  @media (max-width: 400px) {
-    .card-cyber{
-      width: 280px;
-    }
-    .card-top-shape {
-      width: 300px;
-    }
 }
+
+.card-wrapper-cyber::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--pink-border);
+  z-index: 1; /* same as wrapper, or slightly lower than card */
+
+  clip-path: polygon(
+    0 24%, 5% 31%, 5% 60%, 0 65%, 0 68%, 0 93%,
+    6% 100%, 0 100%, 0 0
+  );
+
+  background: linear-gradient(
+    to bottom,
+    var(--purple-dark) 0%,
+    var(--purple-light) 10%,
+    var(--pink-magenta) 20%,
+    var(--pink-cyber) 35%,
+    var(--white-dirty) 50%,
+    var(--pink-cyber) 65%,
+    var(--pink-magenta) 80%,
+    var(--purple-light) 90%,
+    var(--purple-dark) 100%
+  );
+}
+
+.card-cyber::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 40px;
+  height: 105%;
+  z-index: 3; /* higher than card, but lower than top shape */
   
+  background: linear-gradient(
+    to bottom,
+    var(--purple-dark) 0%,
+    var(--purple-light) 10%,
+    var(--pink-magenta) 20%,
+    var(--pink-cyber) 35%,
+    var(--white-dirty) 50%,
+    var(--pink-cyber) 65%,
+    var(--pink-magenta) 80%,
+    var(--purple-light) 90%,
+    var(--purple-dark) 100%
+  );
   
+  filter: drop-shadow(-1px 0px 200px var(--purple-dark))
+          drop-shadow(-3px 0px 30px purple);
+}
+
+.card-top-shape {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 400px;
+  height: 130px;
+  z-index: 4; /* highest z-index for this overlay */
+  pointer-events: none;
+  
+  background: linear-gradient(
+    to right,
+    var(--purple-light) 10%,
+    var(--pink-magenta) 20%,
+    var(--pink-cyber) 35%,
+    var(--white-dirty) 50%,
+    var(--pink-cyber) 65%,
+    var(--pink-magenta) 80%,
+    var(--purple-light) 90%,
+    var(--purple-dark) 100%
+  );
+  
+  clip-path: polygon(0 0, 23% 0, 28% 10%, 100% 10%, 100% 31%, 0 31%);
+}
+
+.cyber {
+  margin: auto;
+  cursor: pointer;
+  text-align: end;
+  color: #fff;
+  text-shadow:
+    0 0 5px rgba(255, 192, 255, 0.4),
+    0 0 8px rgba(170, 100, 255, 0.3);
+  margin-left: 15px;
+  letter-spacing: 0.1em;
+}
+
+.card-header-cyber {
+  position: relative;
+  width: 100%;
+  padding: 50px 0 0 15px; /* Adjust padding to match old layout */
+}
+
+.logo-image-cyber {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: auto;
+  height: auto;
+}
+
+.card-heading-cyber {
+  position: relative;
+  z-index: 2; /* Ensure the text is above the logo and other elements */
+  margin: 0; /* Remove default margin */
+  text-align: right;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255, 192, 255, 0.4), 0 0 8px rgba(170, 100, 255, 0.3);
+  letter-spacing: 0.1em;
+}
+
+
+@media (max-width: 400px) {
+  .card-cyber {
+    width: 280px;
+  }
+  .card-top-shape {
+    width: 300px;
+  }
+}

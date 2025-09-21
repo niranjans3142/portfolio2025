@@ -21,14 +21,14 @@ const companies = [
     years: "Sep 2022 - Present",
     domain: "OTT",
     skills: ['Javascript', 'TypeScript', 'ReactJS', 'NextJS', 'MaterialUI', 'SSR', 'CSR', 'DataDog', 'GTM', 'GIT', 'Bitmovin', 'HTML', 'CSS', 'web vitals', 'Micro Frontend'],
-    short: `&#x1F4CD;Optimized and maintained a high-traffic web application, supporting 5M+ monthly active browser users with AVOD(Advertisement) and SVOD(Subscription) plans.<br>
-&#x1F4CD;Deployed and maintained shift from a legacy monolith to a micro-frontend architecture using ReactJS SSR, reducing load time by 20% and improving metrics TTI to 1.2s across 5M+ users.<br>
-&#x1F4CD;Enhanced browser AVOD ad revenue through stream tracking and placement accuracy, helping to generate revenue of 15M HKD for browser users.<br>
-&#x1F4CD;Engineered features: OTP security, video player control, Datadog trace.<br>
-&#x1F4CD;Streamlined API and architecture documentation on Confluence, enhancing cross-team collaboration.<br>
-&#x1F4CD;Developed Google Ads tracing capabilities that streamlined ad performance analysis, boosted campaign.<br>
-&#x1F4CD;Integrated GTM for analytics and Sentry for health and performance monitoring.<br>
-&#x1F4CD;Developed a POC to optimize login iframe caching for Huawei devices, reducing load times significantly with CDN reconfiguration and TTL refresh.`
+    short: `<span class="pointer-mark">&rarr;</span>Optimized and maintained a high-traffic web application, supporting 5M+ monthly active browser users with AVOD(Advertisement) and SVOD(Subscription) plans.<br>
+<span class="pointer-mark">&rarr;</span>Deployed and maintained shift from a legacy monolith to a micro-frontend architecture using ReactJS SSR, reducing load time by 20% and improving metrics TTI to 1.2s across 5M+ users.<br>
+<span class="pointer-mark">&rarr;</span>Enhanced browser AVOD ad revenue through stream tracking and placement accuracy, helping to generate revenue of 15M HKD for browser users.<br>
+<span class="pointer-mark">&rarr;</span>Engineered features: OTP security, video player control, Datadog trace.<br>
+<span class="pointer-mark">&rarr;</span>Streamlined API and architecture documentation on Confluence, enhancing cross-team collaboration.<br>
+<span class="pointer-mark">&rarr;</span>Developed Google Ads tracing capabilities that streamlined ad performance analysis, boosted campaign.<br>
+<span class="pointer-mark">&rarr;</span>Integrated GTM for analytics and Sentry for health and performance monitoring.<br>
+<span class="pointer-mark">&rarr;</span>Developed a POC to optimize login iframe caching for Huawei devices, reducing load times significantly with CDN reconfiguration and TTL refresh.`
   },
   {
     name: "Elixia Tech Soln Ltd",
@@ -38,11 +38,11 @@ const companies = [
     years: "April 2021 - July 2022",
     domain: "Logistics",
     skills: ['Javascript', 'ReactJS', 'MaterialUI', 'CSR', 'GTM', 'GIT', 'HTML', 'CSS', 'Formik', 'web vitals', 'Micro Frontend'],
-    short: `&#x1F4CD;Coded and Delivered key frontend requirements during the company's successful 2022 seed funding for 2M.<br>
-    &#x1F4CD;Architected and enabled end-to-end logistics management for loads and goods using micro-frontend architecture for India's biggest E-Commerce platform, like Flipkart, including authorization, pickup, and delivery workflows. <br>
-    &#x1F4CD;Orchestrated by building and support of a suite of Supply Chain platform, divided into 3 major modules - Pre Transit, In Transit, & Post Transit, billed on clients' subscription submodules, like partner onboarding, tracking, fleet management, capacity optimiser, bidding, and billing.<br>
-    &#x1F4CD;Implemented Onboarding guides for developers using Storybook, helping quick familiarity with product story.<br>
-    &#x1F4CD;Led migration from manual deployments to setting up Jenkins CI/CD pipeline, improving integration cycle by 100%, cutting deployment time from manual efforts to under 15 mins, enabling faster release cycles and rollback.
+    short: `<span class="pointer-mark">&rarr;</span>Coded and Delivered key frontend requirements during the company's successful 2022 seed funding for 2M.<br>
+    <span class="pointer-mark">&rarr;</span>Architected and enabled end-to-end logistics management for loads and goods using micro-frontend architecture for India's biggest E-Commerce platform, like Flipkart, including authorization, pickup, and delivery workflows. <br>
+    <span class="pointer-mark">&rarr;</span>Orchestrated by building and support of a suite of Supply Chain platform, divided into 3 major modules - Pre Transit, In Transit, & Post Transit, billed on clients' subscription submodules, like partner onboarding, tracking, fleet management, capacity optimiser, bidding, and billing.<br>
+    <span class="pointer-mark">&rarr;</span>Implemented Onboarding guides for developers using Storybook, helping quick familiarity with product story.<br>
+    <span class="pointer-mark">&rarr;</span>Led migration from manual deployments to setting up Jenkins CI/CD pipeline, improving integration cycle by 100%, cutting deployment time from manual efforts to under 15 mins, enabling faster release cycles and rollback.
 `
   },
   {
@@ -53,9 +53,9 @@ const companies = [
     years: "May 2020 - Feb 2021",
     domain: "Auto tech",
     skills: ['Javascript', 'ReactJS', 'Ruby on Rails', 'MaterialUI', 'SSR', 'CSR', 'Hotjar', 'GTM', 'GIT', 'Microservices', 'Figma', 'HTML', 'CSS'],
-    short: `&#x1F4CD;Worked on ReactJS micro-frontend applications with Ruby on Rails MVC, delivering feature reviews, promotional tools, and returning customer checkout flows.<br>
-&#x1F4CD;Led and supported returning customer quick checkout flows, resulting in a 5-15% increase in conversion rates and contributing to MRR growth.<br>
-&#x1F4CD;Used Hotjar to debug code anomalies for quick support and fixes.
+    short: `<span class="pointer-mark">&rarr;</span>Worked on ReactJS micro-frontend applications with Ruby on Rails MVC, delivering feature reviews, promotional tools, and returning customer checkout flows.<br>
+<span class="pointer-mark">&rarr;</span>Led and supported returning customer quick checkout flows, resulting in a 5-15% increase in conversion rates and contributing to MRR growth.<br>
+<span class="pointer-mark">&rarr;</span>Used Hotjar to debug code anomalies for quick support and fixes.
 `
   },
   {
@@ -66,7 +66,7 @@ const companies = [
     years: "Jan 2019 - Feb 2020",
     domain: "Design and Technology",
     skills: ['Javascript', 'ReactJS', 'Google', 'MaterialUI', 'SSR', 'DataDog', 'GTM', 'GIT', 'JW player', 'HTML', 'CSS', 'Jest'],
-    short: `&#x1F4CD;Built test suites using Puppeteer & Jest to validate data on Google Maps.`
+    short: `<span class="pointer-mark">&rarr;</span>Built test suites using Puppeteer & Jest to validate data on Google Maps.`
   },
   {
     name: "Eventera",
@@ -76,8 +76,8 @@ const companies = [
     years: "Sep 2019 - Dec 2019",
     domain: "Video Streaming",
     skills: ['Javascript', 'ReactJS', 'Google', 'MaterialUI', 'SSR', 'DataDog', 'GTM', 'GIT', 'JW player', 'HTML', 'CSS', 'Jest'],
-    short: `&#x1F4CD;Build a live event streaming platform integrating JW Player.<br>
-    &#x1F4CD;Developed enrollment dashboard for event creator.<br/>
+    short: `<span class="pointer-mark">&rarr;</span>Build a live event streaming platform integrating JW Player.<br>
+    <span class="pointer-mark">&rarr;</span>Developed enrollment dashboard for event creator.<br/>
     <a href='http://reverent-swanson-22aece.netlify.app/' target="_blank">Demo site</a>`
   },
   {
@@ -88,8 +88,8 @@ const companies = [
     years: "Jan 2019 - Aug 2019",
     domain: "Stockbroker and Finance",
     skills: ['Javascript', 'ReactJS', 'Google', 'MaterialUI', 'SSR', 'DataDog', 'GTM', 'GIT', 'JW player', 'HTML', 'CSS', 'Jest'],
-    short: `&#x1F4CD;Developed responsive UIs and real-time trading interfaces for NSE/BSE.<br>XTS-WEB, worked as UI developer for building a trading platform, used angular as framework.<br>
-    &#x1F4CD;HFT-VITTA, worked as a UI developer for building a fast trading platform for user, using the strategy as trading.`
+    short: `<span class="pointer-mark">&rarr;</span>Developed responsive UIs and real-time trading interfaces for NSE/BSE.<br>XTS-WEB, worked as UI developer for building a trading platform, used angular as framework.<br>
+    <span class="pointer-mark">&rarr;</span>HFT-VITTA, worked as a UI developer for building a fast trading platform for user, using the strategy as trading.`
   },
   {
     name: "Persistent System",
@@ -99,8 +99,8 @@ const companies = [
     years: "Dec 2017 – Jan 2019",
     domain: "Services",
     skills: ['Java', 'Javascript', 'Vuejs', 'Java Swing', 'Cucumber', 'MaterialUI', 'CSR', 'GTM', 'GIT', 'Chart.js', 'HTML', 'CSS'],
-    short: `&#x1F4CD;Generated actionable insight reports in Excel and PDF for ThermoFisher, resulting in improved stakeholder engagement on visualizing protein anomalies from FASTA-compliant format generated from Chart.js using Java Swing, Vue.js for ThermoFisher client.<br>
-&#x1F4CD;Improved testing efficiency by reducing manual effort by 100% with an automated Cucumber BDD test suite.`
+    short: `<span class="pointer-mark">&rarr;</span>Generated actionable insight reports in Excel and PDF for ThermoFisher, resulting in improved stakeholder engagement on visualizing protein anomalies from FASTA-compliant format generated from Chart.js using Java Swing, Vue.js for ThermoFisher client.<br>
+<span class="pointer-mark">&rarr;</span>Improved testing efficiency by reducing manual effort by 100% with an automated Cucumber BDD test suite.`
   }
 ];
 
@@ -242,7 +242,7 @@ tabs.forEach(tab => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const cards = document.querySelectorAll('.planet-card');
+  const cards = document.querySelectorAll('.skill-list-card');
   const contactcards = document.querySelectorAll('.service-card');
 
   const observer = new IntersectionObserver((entries) => {
