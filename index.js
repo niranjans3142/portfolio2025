@@ -5,10 +5,21 @@ window.addEventListener('scroll', () => {
   } else {
     nav.classList.remove('scrolled');
   }
+
+  const goToTop = document.querySelector('#goTopBtn');
+  if (window.scrollY > 450) {
+    goToTop.classList.remove('display-none');
+    goToTop.classList.add('display-block');
+  } else {
+    goToTop.classList.remove('display-block');
+    goToTop.classList.add('display-none');
+  }
 });
 
 
-
+const gototop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
 
 
@@ -24,7 +35,8 @@ const companies = [
     short: `<span class="pointer-mark">&rarr;</span>Optimized and maintained a high-traffic web application, supporting 5M+ monthly active browser users with AVOD(Advertisement) and SVOD(Subscription) plans.<br>
 <span class="pointer-mark">&rarr;</span>Deployed and maintained shift from a legacy monolith to a micro-frontend architecture using ReactJS SSR, reducing load time by 20% and improving metrics TTI to 1.2s across 5M+ users.<br>
 <span class="pointer-mark">&rarr;</span>Enhanced browser AVOD ad revenue through stream tracking and placement accuracy, helping to generate revenue of 15M HKD for browser users.<br>
-<span class="pointer-mark">&rarr;</span>Engineered features: OTP security, video player control, Datadog trace.<br>
+<span class="pointer-mark">&rarr;</span>Delivered critical features SSO, User Profiling, SVOD(Subscription and Unsubscribe flow), AVOD(VMAP, Responsive Display Ads), Search, Video Playlist Listing, OTP security, video player control, Health and Performance APP Monitoring through Sentry, User Analytics through GTags, Tracing with Datadog trace, SEO, Accessibility.
+<br>
 <span class="pointer-mark">&rarr;</span>Streamlined API and architecture documentation on Confluence, enhancing cross-team collaboration.<br>
 <span class="pointer-mark">&rarr;</span>Developed Google Ads tracing capabilities that streamlined ad performance analysis, boosted campaign.<br>
 <span class="pointer-mark">&rarr;</span>Integrated GTM for analytics and Sentry for health and performance monitoring.<br>

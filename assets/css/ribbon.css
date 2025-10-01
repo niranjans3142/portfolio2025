@@ -25,7 +25,7 @@
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.1em;
-  color: #fff;
+  color: #e0e0e0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -64,7 +64,7 @@
   width: 6rem;
   height: 4.5rem;
   padding-top: 1.5rem;
-  color: #fff;
+  color: #e0e0e0;
   font-size: 0.85rem;
   font-weight: 600;
   text-align: center;
@@ -146,7 +146,7 @@
 }
 
 .ribbon:hover.ribbon-badge::after {
-  border-top-color: #f0f0f0;
+  border-top-color: #e0e0e0;
 }
 
 @keyframes bounce {

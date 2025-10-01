@@ -50,7 +50,7 @@
 /* Card */
 .skill-card {
   position: relative;
-  background: linear-gradient(135deg, #1a1a1a, #222233); /* Gradient for depth */
+  background: transparent; /* Gradient for depth */
   border-radius: 1.5rem; /* Softer corners */
   padding: 1.5rem;
   display: flex;
@@ -72,7 +72,7 @@
   position: absolute;
   top: 7px; /* Adjusted for better spacing */
   left: 5px;
-  background: #1a1a1a;
+  background: transparent;
   color: #e0e0e0; /* Lighter text for contrast */
   padding: 0.2rem 0.9rem;
   border-radius: 2rem; /* More rounded label */
@@ -178,9 +178,8 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 2rem;
   justify-content: center;
-  padding: 40px;
+  padding: 40px 0;
   background-color: transparent;
 }
 .skill-list-card:last-child {
@@ -272,37 +271,41 @@
 }
 
 .skill-list-card:hover {
-  animation: shake 0.6s ease-in-out;
+  animation: shake 0.8s ease-in-out;
 }
 
 .skill-list-card:active {
-  animation: shake 0.6s ease-in-out;
+  animation: shake 0.8s ease-in-out;
 }
 
-/* Optional hover lift effect */
-.skill-list-card:hover {
-  transform: translateY(-6px);
-  box-shadow:
-    0 14px 28px rgba(0, 0, 0, 0.2),
-    inset 0 1px 2px rgba(0, 0, 0, 0.06),
-    inset 0 -1px 2px rgba(255, 255, 255, 0.6);
-}
 
 @keyframes shake {
   0% {
-    transform: rotate(0deg);
+    transform: scale(1) rotate(0deg) skew(0deg, 0deg);
+  }
+
+  10% {
+    transform: scale(1.05) rotate(-6deg) skew(-2deg, -1deg);
   }
 
   25% {
-    transform: rotate(-20deg);
+    transform: scale(0.98) rotate(8deg) skew(3deg, 2deg);
   }
 
-  75% {
-    transform: rotate(20deg);
+  40% {
+    transform: scale(1.03) rotate(-10deg) skew(-3deg, -2deg);
+  }
+
+  60% {
+    transform: scale(1.02) rotate(6deg) skew(2deg, 1deg);
+  }
+
+  80% {
+    transform: scale(1) rotate(-4deg) skew(-1deg, -1deg);
   }
 
   100% {
-    transform: rotate(0deg);
+    transform: scale(1) rotate(0deg) skew(0deg, 0deg);
   }
 }
 

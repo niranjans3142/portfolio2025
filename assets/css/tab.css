@@ -3,7 +3,7 @@
   --speed: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --closed: 5rem;
   --open: 30rem;
-  --accent: #fff;
+  --accent: #e0e0e0;
 }
 
 .head {
@@ -15,7 +15,7 @@
 
 .head h2 {
   font: 400 1.5rem/1.2 Inter, sans-serif;
-  color: #fff;
+  color: #e0e0e0;
 }
 
 .nav-btn {
@@ -24,7 +24,7 @@
   border: none;
   border-radius: 50%;
   background: #000;
-  color: #fff;
+  color: #e0e0e0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,14 +117,14 @@
 
 .project-card__title {
   background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.4) 100%);
-  color: #fff;
+  color: #e0e0e0;
   font-weight: 700;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
 
 .project-card[active] .project-card__content .project-card-bgg .project-card__title {
-  color: #fff;
+  color: #e0e0e0;
 }
 
 
@@ -161,7 +161,7 @@
 
 .project-card__desc {
   background-color: #111; /* softer than pure black */
-  color: #ffffff;
+  color: #e0e0e0;
   line-height: 1.6;
   font-weight: 600; /* semi-bold */
   padding: 1rem;

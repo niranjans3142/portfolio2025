@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <nav class="top-nav">
+  <nav id="navigation" class="top-nav">
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#work-experience">Journey</a></li>
@@ -34,10 +34,10 @@
     </ul>
   </nav>
 
-  <section class="hero">
+  <section id="hero" class="hero">
     <div class="hero-content">
       <div class="hero-section">
-        <h2 class="margin-top-2rem">
+        <h2 class="margin-top-2rem text-decoration-none">
           <span class="border-letter">S</span><span class="border-letter">E</span><span
             class="border-letter">N</span><span class="border-letter">I</span><span class="border-letter">O</span><span
             class="border-letter">R</span>
@@ -340,7 +340,7 @@
 
   <section id="skills">
     <div class="container">
-      <h2 class="margin-bottom-0">Skills</h2>
+      <h2 class="">Skills</h2>
 
       <div class="grid">
         <div class="skill-card grid-item-1">
@@ -444,6 +444,13 @@
       </div>
     </div>
   </section>
+
+  <button id="goTopBtn" title="Back to Top" onclick="gototop()">
+    <svg class="chevron-icon" viewBox="0 0 24 24">
+      <path d="M6 14l6-6 6 6" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
 
   <footer>
     <p>&copy;Niranjan Singh Resume.</p>

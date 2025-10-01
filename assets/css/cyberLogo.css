@@ -128,7 +128,7 @@
   margin: auto;
   cursor: pointer;
   text-align: end;
-  color: #fff;
+  color: #e0e0e0;
   text-shadow:
     0 0 5px rgba(255, 192, 255, 0.4),
     0 0 8px rgba(170, 100, 255, 0.3);
@@ -155,7 +155,7 @@
   z-index: 2; /* Ensure the text is above the logo and other elements */
   margin: 0; /* Remove default margin */
   text-align: right;
-  color: #fff;
+  color: #e0e0e0;
   text-shadow: 0 0 5px rgba(255, 192, 255, 0.4), 0 0 8px rgba(170, 100, 255, 0.3);
   letter-spacing: 0.1em;
 }
